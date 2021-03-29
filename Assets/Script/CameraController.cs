@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CameraController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class CameraController : MonoBehaviour {
+
+    [SerializeField] GameObject playerObject;
+
+    private Vector3 offset;
+
+    void Start() {
+        offset = transform.position - playerObject.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        transform.position = playerObject.transform.position + offset;
     }
 }
