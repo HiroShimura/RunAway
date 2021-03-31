@@ -792,3 +792,27 @@ Received Import Request.
   path: Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller
   artifactKey: Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller using Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e357166e34743a1d438327f325fc25d5') in 0.045749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 366.231807 seconds.
+  path: Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller
+  artifactKey: Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller using Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d1dffbd13c455bf5f66877d183ca0f') in 0.040644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 786.203799 seconds.
+  path: Assets/UnityChan/SD_unitychan/Animations/Result_SD_unitychan_motion_humanoid.controller
+  artifactKey: Guid(7bbde6cc6f212304aa1526ce187cea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChan/SD_unitychan/Animations/Result_SD_unitychan_motion_humanoid.controller using Guid(7bbde6cc6f212304aa1526ce187cea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706d4567936c2ea1218324f3cba4f785') in 0.049648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.622701 seconds.
+  path: Assets/UnityChan/SD_unitychan/Animations/Result_SD_unitychan_motion_humanoid.controller
+  artifactKey: Guid(7bbde6cc6f212304aa1526ce187cea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChan/SD_unitychan/Animations/Result_SD_unitychan_motion_humanoid.controller using Guid(7bbde6cc6f212304aa1526ce187cea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b92fb93e1e3f71f531215272b92611d') in 0.039609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.620862 seconds.
+  path: Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller
+  artifactKey: Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller using Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e69d9dfe620da9c08a78ca4bfe4021') in 0.043179 seconds 
