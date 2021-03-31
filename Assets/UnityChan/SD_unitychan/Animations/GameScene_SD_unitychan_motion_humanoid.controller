@@ -31,7 +31,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mod_SD_unitychan_motion_humanoid
+  m_Name: GameScene_SD_unitychan_motion_humanoid
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Next
