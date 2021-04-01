@@ -816,3 +816,4 @@ Received Import Request.
   path: Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller
   artifactKey: Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/UnityChan/SD_unitychan/Animations/GameScene_SD_unitychan_motion_humanoid.controller using Guid(f12eb12a01c7745498a4cc2c9fe7f97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e69d9dfe620da9c08a78ca4bfe4021') in 0.043179 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
