@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
     CharacterController characterController;
     Transform _transform;
     Vector3 moveVelocity;
-    float moveSpeed = 2;
+    float moveSpeed = 1.7f;
 
     // Start is called before the first frame update
     void Start() {
@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKey(KeyCode.LeftShift)) {
-            moveSpeed = 3.5f;
+            moveSpeed = 3.4f;
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift)) {
-            moveSpeed = 2;
+            moveSpeed = 1.7f;
         }
         moveVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         moveVelocity.z = Input.GetAxis("Vertical") * moveSpeed;
