@@ -2,7 +2,7 @@
 
 public class Status : MonoBehaviour {
     float stamina;
-    [SerializeField] float staminaMax = 100f;
+    [SerializeField] float staminaMax = 200f;
 
     public float Stamina {
         get => stamina;

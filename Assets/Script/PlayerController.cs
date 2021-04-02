@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour {
             }
             else {
                 moveSpeed = topSpeed;
-                status.Stamina -= 0.5f;
+                status.Stamina -= 0.3f;
             }
         }
         else {
@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour {
                 status.Stamina += 0.2f;
             }
             else {
-                status.Stamina += 0.4f;
+                status.Stamina += 0.3f;
             }
         }
         moveVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
