@@ -19,13 +19,14 @@ public class PlayerController : MonoBehaviour {
         _transform = transform;
     }
 
-    // Update is called once per frame
     void Update() {
         if (Input.GetKey(KeyCode.LeftShift)) {
             if (status.Stamina <= 0) {
                 status.StaminaEmpty = true;
+                moveSpeed = walkSpeed;
+                status.Stamina += 0.2f;
             }
-            else if (status.StaminaEmpty == true) {
+            else if (status.StaminaEmpty) {
                 moveSpeed = walkSpeed;
                 status.Stamina += 0.2f;
                 if (status.Stamina >= 100) {
@@ -39,7 +40,12 @@ public class PlayerController : MonoBehaviour {
         }
         else {
             moveSpeed = walkSpeed;
-            status.Stamina += 0.4f;
+            if (status.StaminaEmpty) {
+                status.Stamina += 0.2f;
+            }
+            else {
+                status.Stamina += 0.4f;
+            }
         }
         moveVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         moveVelocity.z = Input.GetAxis("Vertical") * moveSpeed;
