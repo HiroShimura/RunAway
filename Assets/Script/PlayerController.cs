@@ -4,13 +4,17 @@
 public class PlayerController : MonoBehaviour {
     [SerializeField] Animator animator;
 
+    Status status;
     CharacterController characterController;
     Transform _transform;
     Vector3 moveVelocity;
-    float moveSpeed = 1.7f;
+    float moveSpeed;
+    float walkSpeed = 1.7f;
+    float topSpeed = 3.4f;
 
     // Start is called before the first frame update
     void Start() {
+        status = GetComponent<Status>();
         characterController = GetComponent<CharacterController>();
         _transform = transform;
     }
@@ -18,10 +22,12 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKey(KeyCode.LeftShift)) {
-            moveSpeed = 3.4f;
+            moveSpeed = topSpeed;
+            status.Stamina -= 0.5f;
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift)) {
-            moveSpeed = 1.7f;
+        else {
+            moveSpeed = walkSpeed;
+            status.Stamina += 0.2f;
         }
         moveVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         moveVelocity.z = Input.GetAxis("Vertical") * moveSpeed;
