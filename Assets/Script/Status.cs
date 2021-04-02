@@ -8,10 +8,10 @@ public class Status : MonoBehaviour {
         get => stamina;
         set => stamina = value > staminaMax ? staminaMax : value < 0 ? 0 : value;
     }
-
     public float StaminaMax => staminaMax;
+    public bool StaminaEmpty { get; set; } = false;
 
-    void Start() {
+    public virtual void Start() {
         stamina = staminaMax;
     }
 }

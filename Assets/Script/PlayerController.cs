@@ -22,12 +22,24 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKey(KeyCode.LeftShift)) {
-            moveSpeed = topSpeed;
-            status.Stamina -= 0.5f;
+            if (status.Stamina <= 0) {
+                status.StaminaEmpty = true;
+            }
+            else if (status.StaminaEmpty == true) {
+                moveSpeed = walkSpeed;
+                status.Stamina += 0.2f;
+                if (status.Stamina >= 100) {
+                    status.StaminaEmpty = false;
+                }
+            }
+            else {
+                moveSpeed = topSpeed;
+                status.Stamina -= 0.5f;
+            }
         }
         else {
             moveSpeed = walkSpeed;
-            status.Stamina += 0.2f;
+            status.Stamina += 0.4f;
         }
         moveVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         moveVelocity.z = Input.GetAxis("Vertical") * moveSpeed;
