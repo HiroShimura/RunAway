@@ -3,17 +3,28 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyMove : MonoBehaviour {
-    [SerializeField] GameObject player;
+    RaycastHit[] raycastHits = new RaycastHit[10];
     EnemyStatus status;
     NavMeshAgent agent;
-    // Start is called before the first frame update
+
     void Start() {
         status = GetComponent<EnemyStatus>();
         agent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
-    void Update() {
-        agent.destination = player.transform.position;
+    public void OnDetectObject(Collider collider) {
+        if (collider.CompareTag("Player")) {
+            var posDiff = collider.transform.position - transform.position;
+            var distance = posDiff.magnitude;
+            var direction = posDiff.normalized;
+            var hitCount = Physics.RaycastNonAlloc(transform.position, direction, raycastHits, distance);
+            if (hitCount == 0) {
+                agent.isStopped = false;
+                agent.destination = collider.transform.position;
+            }
+            else {
+                agent.isStopped = true;
+            }
+        }
     }
 }

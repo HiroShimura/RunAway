@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour {
     Transform _transform;
     Vector3 moveVelocity;
     float moveSpeed;
-    float walkSpeed = 1.7f;
-    float topSpeed = 3.4f;
+    float walkSpeed = 1f;
+    float topSpeed = 2f;
 
     // Start is called before the first frame update
     void Start() {
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
             else if (status.StaminaEmpty) {
                 moveSpeed = walkSpeed;
                 status.Stamina += 0.2f;
-                if (status.Stamina >= 100) {
+                if (status.Stamina >= 200) {
                     status.StaminaEmpty = false;
                 }
             }
