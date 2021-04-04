@@ -496,3 +496,62 @@ System memory in use after: 129.7 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3396.
 Total: 2.129300 ms (FindLiveObjects: 0.278200 ms CreateObjectMapping: 0.191000 ms MarkObjects: 1.647100 ms  DeleteObjects: 0.012400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001899 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.721 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3399.
+Total: 2.262600 ms (FindLiveObjects: 0.250900 ms CreateObjectMapping: 0.137800 ms MarkObjects: 1.859700 ms  DeleteObjects: 0.013300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8177.035521 seconds.
+  path: Assets/Script/Status.cs
+  artifactKey: Guid(01a9df0ce7ae1e14b8a4b318e58e3780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Status.cs using Guid(01a9df0ce7ae1e14b8a4b318e58e3780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1cd60b70ac687d5c0a3950bb086cad') in 0.008808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.642461 seconds.
+  path: Assets/Script/EnemyStatus.cs
+  artifactKey: Guid(03e705ae1654f6b49a3acf70cd3ff34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/EnemyStatus.cs using Guid(03e705ae1654f6b49a3acf70cd3ff34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d87cdbb1da34ca7a2009ec1c31976dd') in 0.005283 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002379 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3402.
+Total: 2.236000 ms (FindLiveObjects: 0.257100 ms CreateObjectMapping: 0.131400 ms MarkObjects: 1.831900 ms  DeleteObjects: 0.014500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 120.235064 seconds.
+  path: Assets/Script/EnemyStatus.cs
+  artifactKey: Guid(03e705ae1654f6b49a3acf70cd3ff34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/EnemyStatus.cs using Guid(03e705ae1654f6b49a3acf70cd3ff34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ecf47b38b3af9fa9e7ddfa66a229bf9') in 0.004849 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

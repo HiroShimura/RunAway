@@ -4,6 +4,8 @@ using UnityEngine;
 public class EnemyStatus : Status {
     int size = 1;
 
+    public float Hp { get; set; } = 5f;
+
     public override void Start() {
         base.Start();
     }
@@ -16,7 +18,7 @@ public class EnemyStatus : Status {
     }
 
     IEnumerator StaminaEmptyCoroutine() {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         Stamina = StaminaMax;
     }
 }
