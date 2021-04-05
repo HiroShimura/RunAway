@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour {
     float walkSpeed = 1f;
     float topSpeed = 2f;
 
-    // Start is called before the first frame update
     void Start() {
         status = GetComponent<Status>();
         characterController = GetComponent<CharacterController>();
