@@ -4,14 +4,14 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyMove : MonoBehaviour {
     RaycastHit[] raycastHits = new RaycastHit[10];
-    EnemyStatus status;
+    EnemyStatus enemyStatus;
     NavMeshAgent agent;
     public bool usuallyMove = true;
     Vector3 destination;
     float distance = 0;
 
     void Start() {
-        status = GetComponent<EnemyStatus>();
+        enemyStatus = GetComponent<EnemyStatus>();
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -19,8 +19,8 @@ public class EnemyMove : MonoBehaviour {
         if (usuallyMove) {
             Debug.Log("UsuallyMove");
             if (distance <= 1) {
-                destination.x = Random.Range(-8f, 8f);
-                destination.z = Random.Range(-8f, 8f);
+                destination.x = Random.Range(-8f * enemyStatus.Scale, 8f * enemyStatus.Scale);
+                destination.z = Random.Range(-8f * enemyStatus.Scale, 8f * enemyStatus.Scale);
             }
             agent.destination = destination;
             distance = (destination - transform.position).magnitude;
@@ -28,7 +28,6 @@ public class EnemyMove : MonoBehaviour {
         }
         else if (!usuallyMove) {
             Debug.Log("ChasePlayer");
-            distance = 0;
         }
     }
 
@@ -40,11 +39,10 @@ public class EnemyMove : MonoBehaviour {
             var direction = posDiff.normalized;
             var hitCount = Physics.RaycastNonAlloc(transform.position, direction, raycastHits, distance);
             if (hitCount == 0) {
-                agent.isStopped = false;
                 agent.destination = collider.transform.position;
             }
             else {
-                agent.isStopped = true;
+                this.distance = 0;
                 usuallyMove = true;
             }
         }

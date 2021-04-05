@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour {
             }
             else {
                 moveSpeed = topSpeed;
-                status.Stamina -= 0.3f;
+                status.Stamina -= 0.5f;
             }
         }
         else {
