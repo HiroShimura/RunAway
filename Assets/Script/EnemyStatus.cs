@@ -1,30 +1,40 @@
 ﻿using UnityEngine;
 
 public class EnemyStatus : Status {
-    public float Hp { get; set; } = 5f;
     GameObject rig;
-    SphereCollider collisionDetectorCollider;
+    SphereCollider detectionRangeCollider;
+    SphereCollider attackRangeCollider;
+    [SerializeField] float detectionRange = 5f;
+    [SerializeField] float attackRange = 0.75f;
+    public bool usuallyMove = true;
+    public bool ChasePlayer { get; set; } = true;
+
+    public EnemyStatus() {
+        Hp = 5f;
+    }
 
     public override void Start() {
         base.Start();
         rig = GameObject.Find("RIG");
-        collisionDetectorCollider = GameObject.Find("CollisionDetector").GetComponent<SphereCollider>();
+        detectionRangeCollider = GameObject.Find("DetectionRangeCollider").GetComponent<SphereCollider>();
+        detectionRangeCollider.radius = detectionRange;
+        attackRangeCollider = GameObject.Find("AttackRangeCollider").GetComponent<SphereCollider>();
+        attackRangeCollider.radius = attackRange;
         Scale = 1 + Size * 0.2f;
     }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
-            Size++;
-            Scale = 1 + Size * 0.2f;
-            rig.transform.localScale = new Vector3(Size * 50, Size * 50, Size * 50);
-            collisionDetectorCollider.radius = 5 * Scale;
+            BuildUp();
         }
     }
 
-    /*
-IEnumerator StaminaEmptyCoroutine() {
-    yield return new WaitForSeconds(2);
-    Stamina = StaminaMax;
-}
-*/
+    public void BuildUp() {
+        Size++;
+        Hp *= Size;
+        Scale = 1 + Size * 0.2f;
+        rig.transform.localScale = new Vector3(Size * 50, Size * 50, Size * 50);
+        detectionRangeCollider.radius = 5 * Scale;
+        attackRangeCollider.radius = attackRange * Size;
+    }
 }
