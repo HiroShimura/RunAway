@@ -15,7 +15,7 @@ public class EnemyMove : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
     }
 
-    private void Update() {
+    void Update() {
         if (enemyStatus.usuallyMove) {
             // なぜかdistance <= 1じゃないと上手くいかない
             if (distance <= 1) {
@@ -48,5 +48,13 @@ public class EnemyMove : MonoBehaviour {
                 enemyStatus.usuallyMove = true;
             }
         }
+    }
+
+    public void OnAttack() {
+        Debug.Log("Attack");
+    }
+
+    public void OnAttackFinished() {
+        Debug.Log("Finished Attack");
     }
 }

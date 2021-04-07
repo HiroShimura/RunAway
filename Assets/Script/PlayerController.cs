@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour {
     Transform _transform;
     Vector3 moveVelocity;
     float moveSpeed;
-    float walkSpeed = 1f;
-    float topSpeed = 2f;
+    float walkSpeed = 0.8f;
+    float topSpeed = 1.6f;
 
     void Start() {
         status = GetComponent<Status>();
@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
+        if (status.Hp <= 0) {
+            status.Die();
+        }
         if (Input.GetKey(KeyCode.LeftShift)) {
             if (status.Stamina <= 0) {
                 status.StaminaEmpty = true;

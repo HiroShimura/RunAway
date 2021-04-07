@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class Status : MonoBehaviour {
-    public float Hp { get; protected set; }
+    public float Hp { get; protected set; } = 0.1f;
     float stamina;
     public float Stamina {
         get => stamina;
@@ -17,7 +17,8 @@ public class Status : MonoBehaviour {
         set => size = value > 5 ? 5 : value;
     }
     public float Scale { get; set; }
-    public bool FriendlyFire { get; set; } = false;
+
+    public bool AttackPossible { get; protected set; } = true;
 
     protected Animator animator;
 
@@ -27,8 +28,12 @@ public class Status : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
-    public void Attack<T>(T value) where T : Status {
-        value.Hp -= Random.Range(0.1f, 0.5f);
+    public void Attack<T>(T value) where T : Collider {
+        if (!AttackPossible) {
+            return;
+        }
+        AttackPossible = false;
+        transform.LookAt(value.transform.position);
         animator.SetTrigger("Attack");
     }
 

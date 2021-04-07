@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -20,7 +19,7 @@ public class Spawner : MonoBehaviour {
                 Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
             }
             yield return new WaitForSeconds(10);
-            if (GameObject.FindGameObjectsWithTag("Enemy").Count() == 5) {
+            if (playerStatus.Hp <= 0) {
                 break;
             }
         }
