@@ -12,11 +12,14 @@ public class CollisionDetector : MonoBehaviour {
     }
 
     private void OnTriggerStay(Collider other) {
-        if (other.CompareTag("Player")) {
-            onTriggerStay.Invoke(other);
-        }
-        else if (other.CompareTag("Enemy")) {
+        if (other.CompareTag("Enemy")) {
+            enemyStatus.FriendlyFire = true;
+            enemyStatus.usuallyMove = false;
+            enemyStatus.ChasePlayer = false;
             onAttackTrriger.Invoke(other);
+        }
+        else if (other.CompareTag("Player") && !enemyStatus.FriendlyFire) {
+            onTriggerStay.Invoke(other);
         }
     }
 

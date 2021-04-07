@@ -17,6 +17,7 @@ public class Status : MonoBehaviour {
         set => size = value > 5 ? 5 : value;
     }
     public float Scale { get; set; }
+    public bool FriendlyFire { get; set; } = false;
 
     protected Animator animator;
 
@@ -26,20 +27,9 @@ public class Status : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
-    public void SetAttack() {
+    public void Attack<T>(T value) where T : Status {
+        value.Hp -= Random.Range(0.1f, 0.5f);
         animator.SetTrigger("Attack");
-    }
-
-    public void Damage(float damage) {
-        if (Hp <= 0) {
-            return;
-        }
-        Hp -= damage;
-        if (Hp > 0) {
-            return;
-        }
-        animator.SetTrigger("Die");
-        Die();
     }
 
     public void Die() {

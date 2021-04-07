@@ -3,7 +3,7 @@
 public class EnemyStatus : Status {
     GameObject rig;
     SphereCollider detectionRangeCollider;
-    SphereCollider attackRangeCollider;
+    CapsuleCollider attackRangeCollider;
     [SerializeField] float detectionRange = 5f;
     [SerializeField] float attackRange = 0.75f;
     public bool usuallyMove = true;
@@ -18,7 +18,7 @@ public class EnemyStatus : Status {
         rig = GameObject.Find("RIG");
         detectionRangeCollider = GameObject.Find("DetectionRangeCollider").GetComponent<SphereCollider>();
         detectionRangeCollider.radius = detectionRange;
-        attackRangeCollider = GameObject.Find("AttackRangeCollider").GetComponent<SphereCollider>();
+        attackRangeCollider = GameObject.Find("AttackRangeCollider").GetComponent<CapsuleCollider>();
         attackRangeCollider.radius = attackRange;
         Scale = 1 + Size * 0.2f;
     }

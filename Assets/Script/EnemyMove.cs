@@ -17,16 +17,15 @@ public class EnemyMove : MonoBehaviour {
 
     private void Update() {
         if (enemyStatus.usuallyMove) {
-            Debug.Log("UsuallyMove");
+            // なぜかdistance <= 1じゃないと上手くいかない
             if (distance <= 1) {
-                destination.x = Random.Range(-8f * enemyStatus.Scale, 8f * enemyStatus.Scale);
-                destination.z = Random.Range(-8f * enemyStatus.Scale, 8f * enemyStatus.Scale);
+                destination.x = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
+                destination.z = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
             }
-            else if (!enemyStatus.usuallyMove) {
-                return;
-            }
+            Debug.Log("UsuallyMove");
             agent.destination = destination;
             distance = (destination - transform.position).magnitude;
+
         }
         else if (!enemyStatus.usuallyMove) {
             Debug.Log("ChasePlayer");
@@ -50,13 +49,21 @@ public class EnemyMove : MonoBehaviour {
         }
     }
 
-    public void Attack(Collider collider) {
+    public void EnemyAttack(Collider collider) {
         EnemyStatus enemy = GameObject.Find(collider.name).GetComponent<EnemyStatus>();
-        if (collider.CompareTag("Enemy")) {
-            Debug.Log(enemy.name);
-            transform.LookAt(collider.transform.position);
+        agent.destination = transform.position;
+        transform.LookAt(enemy.transform.position);
+        if (enemyStatus.Hp <= 0) {
+            enemyStatus.Die();
         }
-        enemyStatus.Damage(Random.Range(0.1f, 0.5f));
-        enemyStatus.SetAttack();
+        enemyStatus.Attack(enemy);
+        if (enemy == null) {
+            enemyStatus.FriendlyFire = false;
+            Debug.Log(enemy.name + "is dead");
+            enemyStatus.BuildUp();
+        }
+        else {
+            Debug.Log(enemy.name + "is alive");
+        }
     }
 }
