@@ -28,6 +28,7 @@ public class EnemyMove : MonoBehaviour {
 
         }
         else if (!enemyStatus.usuallyMove) {
+            distance = 0;
             Debug.Log("ChasePlayer");
         }
     }
@@ -46,24 +47,6 @@ public class EnemyMove : MonoBehaviour {
                 this.distance = 0;
                 enemyStatus.usuallyMove = true;
             }
-        }
-    }
-
-    public void EnemyAttack(Collider collider) {
-        EnemyStatus enemy = GameObject.Find(collider.name).GetComponent<EnemyStatus>();
-        agent.destination = transform.position;
-        transform.LookAt(enemy.transform.position);
-        if (enemyStatus.Hp <= 0) {
-            enemyStatus.Die();
-        }
-        enemyStatus.Attack(enemy);
-        if (enemy == null) {
-            enemyStatus.FriendlyFire = false;
-            Debug.Log(enemy.name + "is dead");
-            enemyStatus.BuildUp();
-        }
-        else {
-            Debug.Log(enemy.name + "is alive");
         }
     }
 }
