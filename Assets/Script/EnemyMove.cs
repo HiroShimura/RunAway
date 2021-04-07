@@ -50,6 +50,16 @@ public class EnemyMove : MonoBehaviour {
         }
     }
 
+    public void Attack(Collider value) {
+        if (!enemyStatus.AttackPossible) {
+            return;
+        }
+        agent.destination = transform.position;
+        transform.LookAt(value.transform.position.normalized);
+        enemyStatus.InAttack(value.name);
+        enemyStatus.BuildUp();
+    }
+
     public void OnAttack() {
         Debug.Log("Attack");
     }

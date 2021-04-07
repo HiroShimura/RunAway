@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/release' branch; Version is '2021.1.0f1 (61a549675243) revision 6399305'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.867; Version 2004; 64bit' Language: 'ja' Physical Memory: 8082 MB
+OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'ja' Physical Memory: 16325 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,743 +11,1229 @@ C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/202011game/Desktop/MyUnityProjects/RunAway
+D:/Documents/Unity/RunAway
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61577
-Successfully changed project path to: C:/Users/202011game/Desktop/MyUnityProjects/RunAway
-C:/Users/202011game/Desktop/MyUnityProjects/RunAway
+65307
+Successfully changed project path to: D:/Documents/Unity/RunAway
+D:/Documents/Unity/RunAway
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 133.92 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 176.91 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0f1 (61a549675243)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/202011game/Desktop/MyUnityProjects/RunAway/Assets
+[Subsystems] Discovering subsystems at path D:/Documents/Unity/RunAway/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x126)
-    Vendor:   Intel
-    VRAM:     128 MB
-    Driver:   9.17.10.4459
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   27.21.14.6172
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003060 seconds.
+Registered in 0.001705 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 133.44 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 117.90 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.232 seconds
+- Completed reload, in  2.387 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005673 seconds.
+Registered in 0.002097 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.785 seconds
+- Completed reload, in  1.016 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2851 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.6 MB.
-System memory in use after: 108.7 MB.
+System memory in use before: 112.8 MB.
+System memory in use after: 113.0 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3305.
-Total: 3.132600 ms (FindLiveObjects: 0.306700 ms CreateObjectMapping: 0.137000 ms MarkObjects: 2.565200 ms  DeleteObjects: 0.121200 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3309.
+Total: 2.668400 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.251900 ms MarkObjects: 2.049700 ms  DeleteObjects: 0.070700 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
   artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c03ad817da01e8e924319c1f4f705ac') in 0.243789 seconds 
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfacc4cd1193e579cc55d6ef2d734f66') in 0.539394 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.381713 seconds.
+  Time since last request: 26.056481 seconds.
   path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
   artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca683f8b26f145c57b14859cb6b54ae9') in 0.056377 seconds 
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d7b88bb1a84e5f7fca54c749d857f7') in 0.013256 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.422057 seconds.
+  Time since last request: 3.500283 seconds.
   path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
   artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb16387c07db5dd35dbb129fd6e379f9') in 0.050477 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 157.189215 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a45256dda6ec71c2f5caa053903e1b2') in 0.049834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.695698 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2ae5f5a5ce6eb39f000ebdf1cc8808') in 0.060606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.592131 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b0b25778aa1dc412ca81b036e035e9') in 0.050139 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.473176 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8513c5f6cded35e4ed7f25eae7241d5b') in 0.062365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.658880 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd800c28052db83e056d9c20469e760') in 0.063937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.173739 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39e384abe1b2a0f5d32827698580aba') in 0.063128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.759383 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2192854a49cd1f4addb76e5a1be1d7f') in 0.052237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.034390 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a57420701a501f4ae0cdfb7f7da2a85') in 0.042893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.072670 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40601e8426062c709b97a7c19e6fc56f') in 0.062810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.621795 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37ae164fd0afd23dc61dffbd97aa62d') in 0.047077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.613258 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d85c5e66ae66bb5610c30e7c24dd17') in 0.048984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.448377 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061fb4e3482d31b4b31ca1670d93fd60') in 0.046355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.140835 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c286e043a1a4cc5620120d3ae5b735e') in 0.069656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.611952 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f921e68256d2c9435d0a53875e8c8162') in 0.066209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.615516 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e217ba22226eef77f85703893cdf4a18') in 0.046297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.666439 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3547c131f5b1979fef11c11188eaae6b') in 0.052796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.450784 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d4372e670a98a4b2f5ec5fa19db6b9') in 0.064580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.930948 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b8c2253cdf6e4038f79f043394d19e') in 0.104794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.737430 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c61b3ed1030011260ec56396b4459b6') in 0.097756 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.405107 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e910bff3cee49f999baf45559fa1be8') in 0.062840 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.433817 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6ffa5c01dd23a6cbd06f9fa93591c1') in 0.061423 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.182116 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4c583de16472e2543edcfff217ec45') in 0.073711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 120.607329 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cd032bd6e0cb8f47d8938a73d88ce4') in 0.053125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.115433 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4210fbfbc9ad09f15cc7803fc2a860e8') in 0.059533 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.291566 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb90d03de5845455719be20b4ae8053') in 0.057446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.960632 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a88539f406e32f7ad121e8d5e3f74f8') in 0.045372 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.236837 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0f9fcd80874e793e31c90ad6042eb7') in 0.051025 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.452451 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3f33175a530bb50030cde5721f0231') in 0.053401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.652137 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46238fbf442c8e983761d061ca5a73a') in 0.049157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.375163 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff4e006c23c19793b0f1f19b5844f71') in 0.055610 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.875449 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d1286892f49e3a58622e637183f01e') in 0.043951 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.768026 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382ec77a567174e47928a508b7e6c36b') in 0.070059 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.103534 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74de22ce57bdf83b316f5ae16d21c202') in 0.051055 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.590517 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34bede77a14c60fe28f4a517d2c9664') in 0.068226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.360911 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da2a8dbe9edbe7ead43c23e1855efb1') in 0.050882 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.141762 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf16b2ab4246465b98f0d25b6d790dd0') in 0.053812 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.149588 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a56ee0a48ce75af9ae4c793c26e456') in 0.051097 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.273237 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24930ba0bc5216a66ebb448fb722533a') in 0.046326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.845307 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054f88e96b5eaa28e626dd81449e8442') in 0.062411 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.085522 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c796be379fd0ce5d3735241c61f01fa7') in 0.045893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.937194 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb454122d18fc887b06e090dbc654217') in 0.048065 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.678176 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2903b6bf74a718e71f29263d7caa5ab') in 0.056908 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.721791 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb4330674dbfeace11b41c6ca13b1dc') in 0.049537 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.649447 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bfdedc13967789727c446478c373b7') in 0.047005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.391215 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3009914d789ded5df8cffacc40db216b') in 0.047462 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.232474 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7847c523a8fee0bb0c7f4b6b7c5c8377') in 0.056769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.636746 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df61c0e0dbb5bf55a1ee78fc0f19564b') in 0.048952 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.598354 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac23621950a7fdfd108e55aa549e5ae6') in 0.058016 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.617033 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918a2d3c540f0fcd7696b3929edc44ab') in 0.048784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.672126 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b8bbb6019cf647b278dddaf13f339b') in 0.047960 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.234136 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d45065f25d98c728faec90c006dbe1') in 0.050128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.709817 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f7e80741db9b017f83dfdc46929616') in 0.045724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.112151 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1004d07daa4c7a49265da3699ae9ca') in 0.047003 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.535756 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7144348db0152535efd8c5b4d56c31e') in 0.051036 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.840985 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bb223f918fff2b1634988bffb9a1fd') in 0.044404 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.127550 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90062d04a9515e4f2d309b0dc4a204ce') in 0.058619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.101363 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e3ded1e8a348d57f81d7c8c7afcbe5') in 0.047787 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.039256 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311bb076ffb119aac5835f0021d72610') in 0.051946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 94.828772 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11a3b0f27cf40f965835d6dd2ca3d6f') in 0.063367 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.660261 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2bdb3e4ba89f1c0c5a5b3a0190fe06') in 0.059406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.176578 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accb7595172204189ce889968bb477be') in 0.050926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.092892 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb859ca28db363e9b6f32e0d12911f6') in 0.055455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.871464 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bfe6f6fcfe9b34f57cb23af69362be') in 0.061606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.395456 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4833e0de79f71cce1923050257de3b8') in 0.047490 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 133.407897 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb3770f3c418d6d770756384f1355ff') in 0.043141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.737843 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7221bd7c54e85bf1dc4e47338ea0d7d3') in 0.047289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.202851 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd789c53606afb9a8ece40b47bc9b432') in 0.068261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.527189 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0eaae79438d906aa4671aea53c9b06') in 0.049228 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.135318 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da6c17a998c7366ea19341910620949') in 0.048209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.138779 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3102296a88a4212da309520fb610d10f') in 0.048384 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.186337 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b0dda1d7182780718c47589ce80962') in 0.064131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.923431 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b471a878e1c5269e16522a9ae940ca') in 0.050128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.262689 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78db14b541cfbdaa258a0b0aea03da1') in 0.062042 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.163205 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba2326862cfb2158d18f60573a8c69c') in 0.044879 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.338659 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fe2ff81759e8cc2be448b899b8105a') in 0.063245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.415401 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6faffd4f891be872438c1bc006e57476') in 0.054504 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.581215 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1f3c11a945c03aa4cd3028d7c7c2d3') in 0.047818 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.300863 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaa06cdc0303b108abf9ac385c9e3a0') in 0.073518 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.197036 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7705d3497c300701a1cf35f1ea03786') in 0.051857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.658791 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008eb9f2347f99aedef2d1fc08533036') in 0.058206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.818196 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e1910e5d12b3fd1d8ecf81d7515796') in 0.059595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.787029 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a69ab434c70b7ef806fa63e3976bf4') in 0.065393 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.328879 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f04604b7430def85e77cd826847b71') in 0.048849 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.044080 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76465e46440af7c9e956704cdc620c4e') in 0.046762 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.584340 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30df7201a3e875f2f459650a2a5c1cc6') in 0.040399 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 83.250267 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea5f2fe78813629c9823b114e3cc904') in 0.056989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.947465 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31edd684a4b346c46d05bb8f82ba42c1') in 0.046910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.831265 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8465520a06f41bbfaa46e340c25ed326') in 0.050166 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.690234 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e5408b61724d6628b792b866b13051') in 0.042031 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.750369 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0941f56f6fe6f78bc0ce3527ff83c9ed') in 0.051993 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.034068 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902c0d4c969f9058604ea4a65b456ba9') in 0.045016 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.093912 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c3770eee41e24ca0f7b9f1901123ae') in 0.065448 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.994719 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fd776610b282d3231f06e3682fc867') in 0.071639 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.772079 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5da1e7468be30ee0704dc6661b68bd') in 0.046183 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.418815 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94283396c8733df7e63c731fe479fdf0') in 0.085899 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.744913 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3427a47ea221948fe8ec36778b8040') in 0.049137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.373306 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05862311f8ebba3fe5575cf7520f389') in 0.051909 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.266562 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7fa8ab1ab8ad78d9fa8e2eb4bf6a135') in 0.042756 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.350721 seconds.
-  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
-  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e857c6ef28115c1959f8000dfe429d') in 0.058259 seconds 
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b670a31bdf18974d3d173972fe666e4a') in 0.011304 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005485 seconds.
+Registered in 0.001734 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.730 seconds
+- Completed reload, in  0.737 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2834 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.0 MB.
-System memory in use after: 112.2 MB.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.1 MB.
+System memory in use after: 129.3 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3315.
-Total: 2.931300 ms (FindLiveObjects: 0.342200 ms CreateObjectMapping: 0.122300 ms MarkObjects: 2.373900 ms  DeleteObjects: 0.090400 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3320.
+Total: 2.212900 ms (FindLiveObjects: 0.238000 ms CreateObjectMapping: 0.156800 ms MarkObjects: 1.783800 ms  DeleteObjects: 0.033300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005559 seconds.
+Registered in 0.001886 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.728 seconds
+- Completed reload, in  0.796 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.20 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2834 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.0 MB.
-System memory in use after: 112.2 MB.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.2 MB.
+System memory in use after: 129.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3318.
-Total: 4.879700 ms (FindLiveObjects: 0.427700 ms CreateObjectMapping: 0.226000 ms MarkObjects: 4.093800 ms  DeleteObjects: 0.128800 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3323.
+Total: 2.285600 ms (FindLiveObjects: 0.234300 ms CreateObjectMapping: 0.148000 ms MarkObjects: 1.885700 ms  DeleteObjects: 0.016200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 441.491123 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b5ede6a5741a035141fd994da703f8') in 0.062441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.440610 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507e0bba1d77dbbff2165c2d3c13260a') in 0.015518 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002192 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.2 MB.
+System memory in use after: 129.4 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3327.
+Total: 1.929200 ms (FindLiveObjects: 0.228600 ms CreateObjectMapping: 0.141000 ms MarkObjects: 1.545400 ms  DeleteObjects: 0.013100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.324211 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1beb537e8fbf66955b716686f568db9') in 0.061328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.059271 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac756b1c1027ac67f9e9dd9631fb3b77') in 0.018603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.373671 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73ed1ac95eabc50b1ddd403c5b3d5cf') in 0.011649 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001828 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.777 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.2 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3331.
+Total: 2.165300 ms (FindLiveObjects: 0.259500 ms CreateObjectMapping: 0.158600 ms MarkObjects: 1.730200 ms  DeleteObjects: 0.015900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005401 seconds.
+Registered in 0.001781 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.778 seconds
+- Completed reload, in  0.782 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2834 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.1 MB.
-System memory in use after: 112.3 MB.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.2 MB.
+System memory in use after: 129.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3321.
-Total: 3.028800 ms (FindLiveObjects: 0.412200 ms CreateObjectMapping: 0.148500 ms MarkObjects: 2.371400 ms  DeleteObjects: 0.094200 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3334.
+Total: 1.965400 ms (FindLiveObjects: 0.285100 ms CreateObjectMapping: 0.176900 ms MarkObjects: 1.488000 ms  DeleteObjects: 0.014100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2121.263120 seconds.
+  Time since last request: 1973.981076 seconds.
   path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
   artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01da47568100ea279e1d534e81be21d7') in 0.180821 seconds 
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b0b3da2ec574de32aff4e0c4e9d454') in 0.066850 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.032527 seconds.
+  Time since last request: 1.953474 seconds.
   path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
   artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2543dea0658e5071c2e869bc93a01453') in 0.046003 seconds 
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebe9cf461194be839fba93503bc6b1e') in 0.011929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.183824 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bfacc27042d454314ea842b0384288') in 0.011685 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002195 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3338.
+Total: 2.339700 ms (FindLiveObjects: 0.228100 ms CreateObjectMapping: 0.135900 ms MarkObjects: 1.959200 ms  DeleteObjects: 0.015100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001964 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3341.
+Total: 1.959100 ms (FindLiveObjects: 0.256700 ms CreateObjectMapping: 0.140900 ms MarkObjects: 1.549000 ms  DeleteObjects: 0.011300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 476.296371 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71e0bae45bd3fe6b876e2ad3003dcc1') in 0.188829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.432748 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24100fc6bf4f53329561f2c7bb6196a3') in 0.011955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.389106 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628e436319dd7c45ea8f230f5c8c8d47') in 0.012096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.558830 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f2d82e9d94579e5baee221042a3f0f') in 0.012240 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001832 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3345.
+Total: 2.008300 ms (FindLiveObjects: 0.235300 ms CreateObjectMapping: 0.138900 ms MarkObjects: 1.620800 ms  DeleteObjects: 0.012600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.632738 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f071f4bdb66912aa0f214e4ffe6a589') in 0.076033 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001860 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.744 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3349.
+Total: 2.110400 ms (FindLiveObjects: 0.230500 ms CreateObjectMapping: 0.138500 ms MarkObjects: 1.727900 ms  DeleteObjects: 0.012600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001910 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.736 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3352.
+Total: 2.160300 ms (FindLiveObjects: 0.250500 ms CreateObjectMapping: 0.137000 ms MarkObjects: 1.757800 ms  DeleteObjects: 0.014000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.750111 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da33fdf4fadcf45849452e411ae166fa') in 0.161362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.755180 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f772a71ec5d8364e9cc3fa2d9278e5') in 0.011768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.595418 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25cf8cd5cb0393f0f026dd86a739c82a') in 0.011512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.450725 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151eed87f7b3fe4931128e5c844881a3') in 0.022687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.182209 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf22a95b830eef3fe1f0ff7bb8ed03c') in 0.011630 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001804 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3356.
+Total: 1.897400 ms (FindLiveObjects: 0.236200 ms CreateObjectMapping: 0.151800 ms MarkObjects: 1.493600 ms  DeleteObjects: 0.015200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.284121 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c687dbd67dd3afc0b0dce84170d2e4a') in 0.162186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.374138 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871adb8f3b3f5c8b13808739613c821a') in 0.012335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.446566 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4915334dfd8c4822e9e443f9f69eccd5') in 0.028069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.240166 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e43611aeaf88b2c5205202074f89b4') in 0.012036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.249410 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f924e88de22a745dadfa6c9cd2c56194') in 0.013208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.862680 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31462766224cfe8c81ccafcfb1cfc27') in 0.011941 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.4 MB.
+System memory in use after: 129.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3360.
+Total: 1.801200 ms (FindLiveObjects: 0.222100 ms CreateObjectMapping: 0.115300 ms MarkObjects: 1.450600 ms  DeleteObjects: 0.012100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002178 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.727 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.4 MB.
+System memory in use after: 129.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3363.
+Total: 2.143400 ms (FindLiveObjects: 0.232800 ms CreateObjectMapping: 0.152800 ms MarkObjects: 1.743100 ms  DeleteObjects: 0.013600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 742.436834 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777fe74796bbcad654e88e375d9c8b40') in 0.062696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.216639 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5688d03f56486f891fef0c063caff023') in 0.012531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.095007 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c13ccae7951b00f9e313bdd6e5dc6d') in 0.014680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.404618 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0adbe1dfb804e4b0c4747841a86f5b') in 0.022169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.434118 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f567e5aad2b0073f5c221f7fc11d1479') in 0.011791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.647855 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d5a8fbe87363ec11d25d665ef3affa') in 0.013454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.589895 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6ce519b6589faa38456b88d65d1d66') in 0.012240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.016010 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b306c6f499909ceb32d846cb22c2ae7a') in 0.023939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.834105 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc73e51081453bddfb86e029f06b3cf5') in 0.012064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.165533 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597d6ae6715e1066fce2715478998e36') in 0.012242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.829676 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35992b53b591663ef0ccf570b1446998') in 0.011956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.188479 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac5438f227d31ab6f3e7db84b29d6a7') in 0.028661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.657609 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11dff488a12cb6844e29d1771025bec') in 0.012375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.372413 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c59d5d2e48737e1985c5048c8a9118') in 0.012508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.949238 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcda5b18e619370d6f5c383e7b75db0f') in 0.011530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.424219 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010c5b57b033a6ce47b954e89b3b8a3e') in 0.020525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.431945 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c6d3059d39eb580e260304c0beff08') in 0.011585 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001814 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3367.
+Total: 2.019300 ms (FindLiveObjects: 0.253700 ms CreateObjectMapping: 0.160100 ms MarkObjects: 1.590200 ms  DeleteObjects: 0.014400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.830895 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ba9ddff2d5bc0bf4464c2cf44a2d10') in 0.188850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.987079 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959f20162b55b8c28a98453acd7fb350') in 0.023548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 892.964877 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a5d1e4657839cc67e03a4d7719dc52') in 0.014615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.651891 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ee65ab0990a275317cc4f9b05064160') in 0.014268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.983116 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efbc79ef1b40ce37c983f7be21249ce') in 0.012831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.737699 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce436de1953859f504824186be9933dc') in 0.011895 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001830 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.779 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3371.
+Total: 2.077500 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.152600 ms MarkObjects: 1.658900 ms  DeleteObjects: 0.014200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.046608 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917c291215c651788a4cdd1681c6a65a') in 0.166819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.012930 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e2ff4bb401824dd535217f41c2e557') in 0.030382 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3375.
+Total: 1.976300 ms (FindLiveObjects: 0.232500 ms CreateObjectMapping: 0.151800 ms MarkObjects: 1.578400 ms  DeleteObjects: 0.012500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001703 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.741 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3378.
+Total: 1.750200 ms (FindLiveObjects: 0.212900 ms CreateObjectMapping: 0.120100 ms MarkObjects: 1.405100 ms  DeleteObjects: 0.011500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 264.433234 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77182f53a381a8c2c0c41d3bb3815521') in 0.199477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.278215 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b038ba8e00324b7d2a672d6bdf75bd2') in 0.020242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.414492 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24014446ab86851466dbb32790c37025') in 0.012509 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3382.
+Total: 2.079700 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.156800 ms MarkObjects: 1.655400 ms  DeleteObjects: 0.015300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.277135 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d99353efc426a80f7d4f722f6609a0') in 0.176846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.467305 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc472ce6e08fec39269a5d32d178967') in 0.023275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.442127 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22bcf55835b3c0d2b0b7fcd840bf929d') in 0.015627 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.734 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.5 MB.
+System memory in use after: 129.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3386.
+Total: 1.940100 ms (FindLiveObjects: 0.250300 ms CreateObjectMapping: 0.152900 ms MarkObjects: 1.522200 ms  DeleteObjects: 0.013200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 337.479764 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8330ac7d6a43628bcd95f5e80676417') in 0.179263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.379071 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd07ae55302349a62846edfeb467574e') in 0.034244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.192973 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b5dd5ec7993e8f8e477e532e4c816e') in 0.012614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.872105 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be63b2749da652ff332f36196b893db9') in 0.011270 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001809 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.6 MB.
+System memory in use after: 129.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3390.
+Total: 2.016700 ms (FindLiveObjects: 0.239800 ms CreateObjectMapping: 0.124300 ms MarkObjects: 1.639100 ms  DeleteObjects: 0.012800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001714 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.756 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.6 MB.
+System memory in use after: 129.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3393.
+Total: 2.209100 ms (FindLiveObjects: 0.290500 ms CreateObjectMapping: 0.160900 ms MarkObjects: 1.729000 ms  DeleteObjects: 0.027800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 193.904300 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc007f40ce4db4c8fb9d947bfd90b600') in 0.183369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.828102 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2e9881acb2d1381a7ab40b59198103') in 0.011474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.654422 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0a8031bed492da6264666a990b196f') in 0.012185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.290811 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9912489391717e86a131d389912593') in 0.012168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.475494 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44626373702dc90cd41c100013c7c2d') in 0.029976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.318222 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c3faa5362eb1e4685c2e523b120e45') in 0.011803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.267107 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a8f2af2cc7c2edea2a01f5cf096df9') in 0.012086 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001735 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.775 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3397.
+Total: 1.977800 ms (FindLiveObjects: 0.257600 ms CreateObjectMapping: 0.149000 ms MarkObjects: 1.559100 ms  DeleteObjects: 0.011500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 128.015672 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d4fa922302e2e83bc79ddf23b75564') in 0.188715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.026948 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b67b3a84c2627a11f254eba415e1dd0') in 0.020927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.787018 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d946ef87798045875f0bdcc3fb7f2d') in 0.017375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.384666 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4adac0787e48fda1567c63fa27be45') in 0.011600 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001937 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.764 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3401.
+Total: 2.235100 ms (FindLiveObjects: 0.255100 ms CreateObjectMapping: 0.209500 ms MarkObjects: 1.752900 ms  DeleteObjects: 0.016200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 211.745301 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd60bb88e9894caf620262cd0c445b18') in 0.060712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.142392 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b422bf50d061d135a5be338f9366bc94') in 0.026695 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001714 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3405.
+Total: 2.039200 ms (FindLiveObjects: 0.243400 ms CreateObjectMapping: 0.140500 ms MarkObjects: 1.630000 ms  DeleteObjects: 0.024700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 135.862454 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9460ee86f374677056f63b7c2e4c41a2') in 0.177641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.257820 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f23206076501638bb8c53a618b71c11') in 0.012007 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002101 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.732 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3409.
+Total: 2.112900 ms (FindLiveObjects: 0.238300 ms CreateObjectMapping: 0.143200 ms MarkObjects: 1.716600 ms  DeleteObjects: 0.013800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.801799 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0be3ac13a47e24473829fc014dd912') in 0.182124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.037449 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2acea85917f8d5d3f2304abd4898d3') in 0.012144 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001812 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.751 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3413.
+Total: 2.369700 ms (FindLiveObjects: 0.278100 ms CreateObjectMapping: 0.161000 ms MarkObjects: 1.917200 ms  DeleteObjects: 0.012500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001903 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.736 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3416.
+Total: 2.032400 ms (FindLiveObjects: 0.291800 ms CreateObjectMapping: 0.162600 ms MarkObjects: 1.562900 ms  DeleteObjects: 0.014000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001869 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.727 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3419.
+Total: 1.911500 ms (FindLiveObjects: 0.219500 ms CreateObjectMapping: 0.121400 ms MarkObjects: 1.558200 ms  DeleteObjects: 0.011600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 531.611026 seconds.
+  path: Assets/Script/Spawner.cs
+  artifactKey: Guid(0564a6a757afbc44d92062f8fe36431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Spawner.cs using Guid(0564a6a757afbc44d92062f8fe36431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d705a68721271c93472999aa8e49475') in 0.014226 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.736 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 130.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3422.
+Total: 2.183200 ms (FindLiveObjects: 0.257600 ms CreateObjectMapping: 0.154400 ms MarkObjects: 1.756400 ms  DeleteObjects: 0.013800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 343.457845 seconds.
+  path: Assets/Script/Spawner.cs
+  artifactKey: Guid(0564a6a757afbc44d92062f8fe36431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Spawner.cs using Guid(0564a6a757afbc44d92062f8fe36431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3aa78179c4b61c9cc6dad5f23b2de2') in 0.004334 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001779 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 130.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3425.
+Total: 2.268900 ms (FindLiveObjects: 0.257600 ms CreateObjectMapping: 0.169000 ms MarkObjects: 1.827500 ms  DeleteObjects: 0.013800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 247.652867 seconds.
+  path: Assets/Script/Spawner.cs
+  artifactKey: Guid(0564a6a757afbc44d92062f8fe36431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Spawner.cs using Guid(0564a6a757afbc44d92062f8fe36431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b23ba1f7382bf56bceaaba1122406a7') in 0.004305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002031 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6f36bf9818a5d3d4294e3420429f68') in 0.209423 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001786 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.7 MB.
+System memory in use after: 130.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3429.
+Total: 2.136000 ms (FindLiveObjects: 0.330100 ms CreateObjectMapping: 0.183600 ms MarkObjects: 1.606700 ms  DeleteObjects: 0.014500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.656495 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab
+  artifactKey: Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green.prefab using Guid(0a5838697431a9d479760ed978ac3a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1638672a166e16868c4a34cd234f1368') in 0.209918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.389322 seconds.
+  path: Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green 1.prefab
+  artifactKey: Guid(e2fe45b04af165348a38d555b46d87ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Monster Pack/CustomPrefabs/Slime_Green 1.prefab using Guid(e2fe45b04af165348a38d555b46d87ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb03d3cc3f00572bd454efd92699e0f') in 0.016978 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001832 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.781 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.8 MB.
+System memory in use after: 130.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3433.
+Total: 2.026000 ms (FindLiveObjects: 0.250400 ms CreateObjectMapping: 0.161600 ms MarkObjects: 1.599900 ms  DeleteObjects: 0.012900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.727 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.8 MB.
+System memory in use after: 130.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3436.
+Total: 2.256300 ms (FindLiveObjects: 0.265900 ms CreateObjectMapping: 0.178900 ms MarkObjects: 1.794100 ms  DeleteObjects: 0.016500 ms)
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

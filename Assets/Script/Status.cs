@@ -28,18 +28,34 @@ public class Status : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
-    public void Attack<T>(T value) where T : Collider {
-        if (!AttackPossible) {
-            return;
-        }
+    public void InAttack(string name) {
         AttackPossible = false;
-        transform.LookAt(value.transform.position);
-        animator.SetTrigger("Attack");
+        var target = GameObject.Find(name);
+        if (target.CompareTag("Player")) {
+            var targetStatus = target.GetComponent<Status>();
+            StartCoroutine(AttackCroutine(targetStatus));
+        }
+        else if (target.CompareTag("Enemy")) {
+            var targetStatus = target.GetComponent<EnemyStatus>();
+            StartCoroutine(AttackCroutine(targetStatus));
+        }
+        AttackPossible = true;
     }
 
     public void Die() {
         animator.SetTrigger("Die");
         StartCoroutine(DestroyCoroutine());
+    }
+
+    IEnumerator AttackCroutine<T>(T status) where T : Status {
+        while (true) {
+            if (status.Hp <= 0) {
+                break;
+            }
+            animator.SetTrigger("Attack");
+            status.Hp -= Random.Range(0.1f, 0.5f);
+            yield return new WaitForSeconds(2);
+        }
     }
 
     IEnumerator DestroyCoroutine() {
