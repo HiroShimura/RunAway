@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update() {
         if (status.Hp <= 0) {
-            status.Die();
+            status.OnDie();
         }
         if (Input.GetKey(KeyCode.LeftShift)) {
             if (status.Stamina <= 0) {

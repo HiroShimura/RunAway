@@ -20,6 +20,9 @@ public class CollisionDetector : MonoBehaviour {
     }
 
     private void OnTriggerExit(Collider other) {
+        if (!other.CompareTag("Player")) {
+            return;
+        }
         enemyStatus.usuallyMove = true;
     }
 }
