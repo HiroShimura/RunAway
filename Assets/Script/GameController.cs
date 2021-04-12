@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
 
     }
 
-    private void OnDestroy() {
+    public void EnemyDestroy() {
         score.TimeScore += 100000;
     }
 }
