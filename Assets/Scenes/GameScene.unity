@@ -385,7 +385,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.28179917, y: 0.000000023347338, z: -0.000000006857158, w: 0.95947343}
+  m_LocalRotation: {x: 0.28179917, y: -0.000000023347347, z: 0.00000000685716, w: 0.95947343}
   m_LocalPosition: {x: 0, y: 6.18, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -581,7 +581,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198371542
 GameObject:
@@ -645,7 +645,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198371542}
-  m_LocalRotation: {x: 0.28179917, y: 0.000000023347338, z: -0.000000006857158, w: 0.95947343}
+  m_LocalRotation: {x: 0.28179917, y: -0.000000023347347, z: 0.00000000685716, w: 0.95947343}
   m_LocalPosition: {x: 0, y: 6.18, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1954,6 +1954,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2209,7 +2221,7 @@ RectTransform:
   - {fileID: 902106941}
   - {fileID: 987022576}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2310,6 +2322,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1931995945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1931995946}
+  - component: {fileID: 1931995947}
+  m_Layer: 0
+  m_Name: ObstacleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1931995946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931995945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.826007, y: -99.16016, z: 76.11389}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1931995947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931995945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0b20d5b77815546a3f6a2ab7d19b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle1: {fileID: 1896500414328670, guid: a8b3e795183c0314ea641e2e250faf06, type: 3}
+  obstacle2: {fileID: 1915141306621562, guid: 5cfc98c10402c794dab857af17745cb9, type: 3}
+  obstacle3: {fileID: 1367448661009924, guid: 56c157ca6ee6048438b794436bc7e413, type: 3}
+  obstacle4: {fileID: 1470700698668186, guid: e09a598f8d47d3549a1cfa79857bb3a9, type: 3}
+  obstacle5: {fileID: 1861008155493970, guid: 1f9417710f05e184d9d07e278a7c59ee, type: 3}
 --- !u!1 &1976056843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100264, guid: 13a16f60da4245c45a865b2136ba272c, type: 3}
