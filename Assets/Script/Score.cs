@@ -3,16 +3,18 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-    string text;
-    int timeScore = 0;
+    Text text;
+    string score;
+
+    public int TimeScore { get; set; } = 0;
 
     void Start() {
-        text = GetComponent<Text>().text;
+        text = GetComponent<Text>();
+        score = text.text;
     }
 
-    // Update is called once per frame
     void Update() {
-        timeScore++;
-        GetComponent<Text>().text = $"{text}{timeScore}";
+        TimeScore++;
+        text.text = $"{score}{TimeScore}";
     }
 }

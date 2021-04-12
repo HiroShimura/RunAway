@@ -24,15 +24,9 @@ public class EnemyStatus : Status {
         Scale = 1 + Size * 0.2f;
     }
 
-    void Update() {
-        if (Hp <= 0) {
-            OnDie();
-        }
-    }
-
     public void BuildUp() {
         Size++;
-        Hp *= Size;
+        Hp += Size;
         Scale = 1 + Size * 0.2f;
         rig.transform.localScale = new Vector3(Size * 50, Size * 50, Size * 50);
         detectionRangeCollider.radius = detectionRange * Scale;

@@ -10,7 +10,18 @@ public class Status : MonoBehaviour {
     }
     [SerializeField] float staminaMax = 100f;
     public float StaminaMax => staminaMax;
-    public bool StaminaEmpty { get; set; } = false;
+
+    private bool staminaEmpty = false;
+
+    public bool GetStaminaIsEmpty() {
+        return staminaEmpty;
+    }
+
+    public void SetStaminaIsEmpty(bool value) {
+        animator.SetBool("StaminaIsEmpty", value);
+        staminaEmpty = value;
+    }
+
     int size;
     public int Size {
         get => size;
@@ -34,7 +45,7 @@ public class Status : MonoBehaviour {
     }
 
     void Update() {
-        if (Hp <= 0) {
+        if (Hp <= 0 && !Die) {
             OnDie();
         }
     }
@@ -62,16 +73,13 @@ public class Status : MonoBehaviour {
         hitCollider.enabled = false;
         animator.SetTrigger("Die");
         Debug.Log(name + " is dead");
+        Die = true;
         StartCoroutine(DestroyCoroutine());
     }
 
     public virtual IEnumerator AttackCroutine<T>(T status) where T : Status {
         while (true) {
-            if (Hp <= 0) {
-                Die = true;
-                break;
-            }
-            else if (AttackPossible || status.Hp <= 0) {
+            if (Hp <= 0 || status.Hp <= 0 || AttackPossible) {
                 break;
             }
             animator.SetTrigger("Attack");

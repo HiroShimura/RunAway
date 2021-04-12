@@ -68,8 +68,5 @@ public class EnemyMove : MonoBehaviour {
             enemyStatus.BuildUp();
             enemyStatus.usuallyMove = true;
         }
-        else if (enemyStatus.Die) {
-            enemyStatus.OnDie();
-        }
     }
 }

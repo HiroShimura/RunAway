@@ -24,15 +24,15 @@ public class PlayerController : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.LeftShift)) {
             if (status.Stamina <= 0) {
-                status.StaminaEmpty = true;
+                status.SetStaminaIsEmpty(true);
                 moveSpeed = walkSpeed;
                 status.Stamina += 0.2f;
             }
-            else if (status.StaminaEmpty) {
+            else if (status.GetStaminaIsEmpty()) {
                 moveSpeed = walkSpeed;
                 status.Stamina += 0.2f;
-                if (status.Stamina >= 200) {
-                    status.StaminaEmpty = false;
+                if (status.Stamina >= status.StaminaMax) {
+                    status.SetStaminaIsEmpty(false);
                 }
             }
             else {
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
         }
         else {
             moveSpeed = walkSpeed;
-            if (status.StaminaEmpty) {
+            if (status.GetStaminaIsEmpty()) {
                 status.Stamina += 0.2f;
             }
             else {
