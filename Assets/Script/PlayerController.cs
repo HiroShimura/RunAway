@@ -57,8 +57,9 @@ public class PlayerController : MonoBehaviour {
             }
         }
         var horizontal = Input.GetAxis("Horizontal");
+        var horizontalRotation = Quaternion.AngleAxis(Camera.main.transform.eulerAngles.y, Vector3.up);
         var vertical = Input.GetAxis("Vertical");
-        moveVelocity = new Vector3(horizontal, 0, vertical).normalized;
+        moveVelocity = horizontalRotation * new Vector3(horizontal, 0, vertical).normalized;
         rotationSpeed = 550 * Time.deltaTime;
         if (Input.GetButtonDown("Jump")) {
             animator.SetTrigger("Jump");
