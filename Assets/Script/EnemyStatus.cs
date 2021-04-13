@@ -19,8 +19,11 @@ public class EnemyStatus : Status {
         base.Start();
         int counter = GameObject.Find("Spawner").GetComponent<Spawner>().Counter;
         name = $"Enemy {counter}";
-        GameObject.Find("RIG").name = name + " RIG";
-        rig = GameObject.Find(name + " RIG");
+        rig = transform.GetChild(1).gameObject;
+        // rig.name = name + " RIG";
+        // Debug.Log(rig.name);
+        // GameObject.Find("RIG").name = name + " RIG";
+        // rig = GameObject.Find(name + " RIG");
         detectionRangeCollider.radius = detectionRange;
         frontAttackRange = front.GetComponent<BoxCollider>();
         Scale = 1 + Size * 0.2f;

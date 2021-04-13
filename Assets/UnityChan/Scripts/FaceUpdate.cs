@@ -8,8 +8,11 @@ namespace UnityChan {
         public bool isKeepFace = false;
         public bool isGUI = true;
 
+        Status status; // 追加
+
         void Start() {
             anim = GetComponent<Animator>();
+            status = GetComponent<Status>(); // 初期化
         }
 
         void OnGUI() {
@@ -61,6 +64,11 @@ namespace UnityChan {
         }
 
         void ChangeFace(string str) {
+            // Emptyフラグがtrueの場合は表情を変えないように変更
+            if (status.GetStaminaIsEmpty()) {
+                return;
+            }
+            // Debug.Log(status.GetStaminaIsEmpty());
             isKeepFace = true;
             current = 1;
             anim.CrossFade(str, 0);
