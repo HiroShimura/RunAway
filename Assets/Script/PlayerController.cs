@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour {
     CharacterController characterController;
     Vector3 moveVelocity;
     float moveSpeed;
-    int walkSpeed = 1;
-    int topSpeed = 2;
+    float walkSpeed = 1.8f;
+    int topSpeed = 4;
     Quaternion targetRotation;
     float rotationSpeed;
 
@@ -50,10 +50,10 @@ public class PlayerController : MonoBehaviour {
             moveSpeed = walkSpeed;
             // Emptyフラグがtrueの時は回復速度が少し遅い
             if (status.GetStaminaIsEmpty()) {
-                status.Stamina += 0.2f;
+                status.Stamina += 0.3f;
             }
             else {
-                status.Stamina += 0.3f;
+                status.Stamina += 0.5f;
             }
         }
         var horizontal = Input.GetAxis("Horizontal");

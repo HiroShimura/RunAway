@@ -1155,15 +1155,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1682,8 +1682,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0b20d5b77815546a3f6a2ab7d19b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle0: {fileID: 0}
-  obstacle1: {fileID: 1896500414328670, guid: a8b3e795183c0314ea641e2e250faf06, type: 3}
-  obstacle2: {fileID: 1915141306621562, guid: 5cfc98c10402c794dab857af17745cb9, type: 3}
-  obstacle3: {fileID: 1367448661009924, guid: 56c157ca6ee6048438b794436bc7e413, type: 3}
-  obstacle4: {fileID: 1470700698668186, guid: e09a598f8d47d3549a1cfa79857bb3a9, type: 3}
+  playerTransform: {fileID: 1735298170}
+  obstacles:
+  - {fileID: 1896500414328670, guid: a8b3e795183c0314ea641e2e250faf06, type: 3}
+  - {fileID: 1915141306621562, guid: 5cfc98c10402c794dab857af17745cb9, type: 3}
+  - {fileID: 1367448661009924, guid: 56c157ca6ee6048438b794436bc7e413, type: 3}
