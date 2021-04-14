@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: be6791f87241109488efc087e1e03325, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -108,13 +108,13 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 35
+    agentSlope: 40
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
-    manualCellSize: 0
-    cellSize: 0.16666667
+    manualCellSize: 1
+    cellSize: 0.08
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -1155,15 +1155,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4963853187110856, guid: e31d877dfa8d9e34bb6047a23a6c0d88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1682,8 +1682,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0b20d5b77815546a3f6a2ab7d19b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1735298170}
   obstacles:
   - {fileID: 1896500414328670, guid: a8b3e795183c0314ea641e2e250faf06, type: 3}
   - {fileID: 1915141306621562, guid: 5cfc98c10402c794dab857af17745cb9, type: 3}
   - {fileID: 1367448661009924, guid: 56c157ca6ee6048438b794436bc7e413, type: 3}
+  - {fileID: 1470700698668186, guid: e09a598f8d47d3549a1cfa79857bb3a9, type: 3}
+  - {fileID: 1861008155493970, guid: 1f9417710f05e184d9d07e278a7c59ee, type: 3}
+  - {fileID: 1222317342016096, guid: 87d3f1218246c6646a23ed8ffe436995, type: 3}
+  - {fileID: 1996175130563874, guid: f1fd43e226df8ac4b9ec292cbd80ff0b, type: 3}
+  - {fileID: 1550037335659234, guid: ad1f452a9e89e4e4282bec400c3dff01, type: 3}
+  - {fileID: 1239407913386324, guid: 24b9985a7bbd5404792d60ae2e52856a, type: 3}
+  - {fileID: 1008299843742446, guid: 80538960ff7e3dd48b4cea8080a8602e, type: 3}
+  - {fileID: 1661291286302674, guid: 47ff4b3fa66b04940a2e9a3d0328da11, type: 3}
+  - {fileID: 1765895908240296, guid: 0c530b0565dee6d419f4668e90d711ac, type: 3}
+  - {fileID: 1857530850387342, guid: 80344a382c10547409245bee6472006a, type: 3}
+  - {fileID: 1003654947944274, guid: 092f5d5ad6cb4cf4f9bb90df4978c490, type: 3}
