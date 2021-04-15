@@ -20,8 +20,10 @@ public class ObstacleSpawner : MonoBehaviour {
         while (true) {
             // 置かれている障害物が最初に決めた総数以上なら終了
             if (num >= obstacleNum) {
-                navMeshSurface.BuildNavMesh();
-                enemySpawner.SetActive(true);
+                if (enemySpawner != null) {
+                    navMeshSurface.BuildNavMesh();
+                    enemySpawner.SetActive(true);
+                }
                 break;
             }
             // 二周目以降は更新したdistanceを足して半径を広げていく
