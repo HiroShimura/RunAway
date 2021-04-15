@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour {
         rotationSpeed = 550 * Time.deltaTime;
         if (Input.GetButtonDown("Jump")) {
             animator.SetTrigger("Jump");
+            status.Stamina += 10f;
         }
         if (moveVelocity.magnitude > 0.5f) {
             targetRotation = Quaternion.LookRotation(moveVelocity, Vector3.up);
