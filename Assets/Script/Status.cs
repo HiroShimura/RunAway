@@ -10,13 +10,10 @@ public class Status : MonoBehaviour {
     }
     [SerializeField] float staminaMax = 100f;
     public float StaminaMax => staminaMax;
-
     private bool staminaEmpty = false;
-
     public bool GetStaminaIsEmpty() {
         return staminaEmpty;
     }
-
     public void SetStaminaIsEmpty(bool value) {
         animator.SetBool("StaminaIsEmpty", value);
         staminaEmpty = value;
@@ -30,12 +27,14 @@ public class Status : MonoBehaviour {
     public float Scale { get; set; }
 
     [SerializeField] protected CapsuleCollider hitCollider;
+
     public bool AttackPossible { get; protected set; } = true;
 
     public bool BuildUpper { get; protected set; } = false;
 
     public bool Die { get; protected set; } = false;
 
+    [SerializeField] protected GameController gameController;
     protected Animator animator;
 
     public virtual void Start() {
@@ -55,10 +54,15 @@ public class Status : MonoBehaviour {
     }
 
     public void InAttack(string name) {
-
         var target = GameObject.Find(name);
-        var targetStatus = target.GetComponent<EnemyStatus>();
-        StartCoroutine(AttackCroutine(targetStatus));
+        if (target.CompareTag("Player")) {
+            var targetStatus = target.GetComponent<Status>();
+            StartCoroutine(AttackCroutine(targetStatus));
+        }
+        else if (target.CompareTag("Enemy")) {
+            var targetStatus = target.GetComponent<EnemyStatus>();
+            StartCoroutine(AttackCroutine(targetStatus));
+        }
     }
 
     public void OnAttack() {
@@ -70,7 +74,9 @@ public class Status : MonoBehaviour {
     }
 
     public virtual void OnDie() {
-        hitCollider.enabled = false;
+        if (CompareTag("Player")) {
+            gameController.GameOver();
+        }
         animator.SetTrigger("Die");
         Debug.Log(name + " is dead");
         Die = true;

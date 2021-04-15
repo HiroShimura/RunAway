@@ -7,7 +7,7 @@ public class EnemyMove : MonoBehaviour {
     [SerializeField] LayerMask layerMask;
     EnemyStatus enemyStatus;
     NavMeshAgent agent;
-    Vector3 destination;
+    Vector3 offset;
     float distance = 0;
 
     void Start() {
@@ -17,25 +17,32 @@ public class EnemyMove : MonoBehaviour {
 
     void Update() {
         if (enemyStatus.usuallyMove) {
+            agent.isStopped = false;
+            var path = new NavMeshPath();
             // なぜかdistance <= 1じゃないと上手くいかない
             if (distance <= 1) {
-                destination.x = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
-                destination.z = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
+                offset.x = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
+                offset.z = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
             }
-            // Debug.Log("UsuallyMove");
+            Vector3 destination = offset + transform.position;
+            if (destination.x < -20 || destination.x > 20 || destination.z < -20 || destination.z > 20 || !NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path)) {
+                distance = 0;
+                return;
+            }
             agent.destination = destination;
-            distance = (destination - transform.position).magnitude;
+            distance = (offset - transform.position).magnitude;
         }
+        /*
         else if (!enemyStatus.usuallyMove) {
             if (enemyStatus.Hp <= 0) {
-                agent.destination = transform.position;
+                agent.isStopped = true;
             }
-            distance = 0;
-            // Debug.Log("ChasePlayer");
         }
+        */
     }
 
     public void OnDetectObject(Collider collider) {
+        agent.isStopped = false;
         if (collider.CompareTag("Player")) {
             enemyStatus.usuallyMove = false;
             var posDiff = collider.transform.position - transform.position;
@@ -61,7 +68,7 @@ public class EnemyMove : MonoBehaviour {
         }
         enemyStatus.AttackPossibleSwitch(false);
         enemyStatus.usuallyMove = false;
-        agent.destination = transform.position;
+        agent.isStopped = true;
         transform.LookAt(value.transform.position);
         enemyStatus.InAttack(value.name);
         if (enemyStatus.BuildUpper) {

@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 public class EnemyStatus : Status {
-    GameController gameController;
     GameObject rig;
     [SerializeField] SphereCollider detectionRangeCollider;
     [SerializeField] float detectionRange = 5f;
@@ -17,7 +16,7 @@ public class EnemyStatus : Status {
 
     public override void Start() {
         base.Start();
-        int counter = GameObject.Find("Spawner").GetComponent<Spawner>().Counter;
+        int counter = GameObject.Find("EnemySpawner").GetComponent<Spawner>().Counter;
         name = $"Enemy {counter}";
         rig = transform.GetChild(1).gameObject;
         // rig.name = name + " RIG";
@@ -27,7 +26,6 @@ public class EnemyStatus : Status {
         detectionRangeCollider.radius = detectionRange;
         frontAttackRange = front.GetComponent<BoxCollider>();
         Scale = 1 + Size * 0.2f;
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     public void BuildUp() {

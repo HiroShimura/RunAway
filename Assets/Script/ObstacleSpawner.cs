@@ -8,7 +8,11 @@ public class ObstacleSpawner : MonoBehaviour {
     Vector3 offset;
     int obstacleNum;
     int num = 0; // 置かれている障害物の総数
+    NavMeshSurface navMeshSurface;
+    [SerializeField] GameObject enemySpawner;
+
     void Start() {
+        navMeshSurface = GetComponent<NavMeshSurface>();
         obstacleNum = Random.Range(15, 21); // 配置する障害物の数を決定(下のfor文の構造上、最大値+1～2個配置される可能性あり)
         int distance = Random.Range(4, 7); // 障害物を出現させる円の半径を決定
         offset = new Vector3(distance, 0); // 決定した半径をVector3に格納
@@ -16,6 +20,8 @@ public class ObstacleSpawner : MonoBehaviour {
         while (true) {
             // 置かれている障害物が最初に決めた総数以上なら終了
             if (num >= obstacleNum) {
+                navMeshSurface.BuildNavMesh();
+                enemySpawner.SetActive(true);
                 break;
             }
             // 二周目以降は更新したdistanceを足して半径を広げていく

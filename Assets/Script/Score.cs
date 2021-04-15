@@ -5,6 +5,7 @@ public class Score : MonoBehaviour {
 
     Text text;
     string score;
+    public bool Stop { get; set; } = false;
 
     public int TimeScore { get; set; } = 0;
 
@@ -14,7 +15,12 @@ public class Score : MonoBehaviour {
     }
 
     void Update() {
-        TimeScore++;
-        text.text = $"{score}{TimeScore}";
+        if (Stop) {
+            text.text = $"{score}{TimeScore}";
+        }
+        else {
+            TimeScore++;
+            text.text = $"{score}{TimeScore}";
+        }
     }
 }

@@ -13,12 +13,21 @@ public class FogController : MonoBehaviour {
             if (fogController.Density >= 4.5f) {
                 return;
             }
-            fogController.HorizontalSpeed = 0.1f;
             fogController.Size = 0.2f;
             fogController.Density += Time.deltaTime;
         }
+        else if (player.transform.position.x <= -20 || player.transform.position.x >= 20 || player.transform.position.z <= -20 || player.transform.position.z >= 20) {
+            if (fogController.Density >= 3.8f) {
+                fogController.Density -= Time.deltaTime;
+            }
+            else if (fogController.Density <= 3f) {
+                fogController.Density += Time.deltaTime;
+            }
+            else {
+                return;
+            }
+        }
         else if (player.transform.position.x <= -16 || player.transform.position.x >= 16 || player.transform.position.z <= -16 || player.transform.position.z >= 16) {
-            fogController.HorizontalSpeed = 0.05f;
             if (fogController.Density >= 3f) {
                 fogController.Density -= Time.deltaTime;
             }
