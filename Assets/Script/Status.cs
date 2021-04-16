@@ -34,13 +34,14 @@ public class Status : MonoBehaviour {
 
     public bool Die { get; protected set; } = false;
 
-    [SerializeField] protected GameController gameController;
+    protected GameController gameController;
     protected Animator animator;
 
     public virtual void Start() {
         stamina = staminaMax;
         size = 1;
         animator = GetComponent<Animator>();
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     void Update() {
@@ -74,13 +75,15 @@ public class Status : MonoBehaviour {
     }
 
     public virtual void OnDie() {
+        Die = true;
         if (CompareTag("Player")) {
             gameController.GameOver();
         }
-        animator.SetTrigger("Die");
-        Debug.Log(name + " is dead");
-        Die = true;
-        StartCoroutine(DestroyCoroutine());
+        else {
+            animator.SetTrigger("Die");
+            Debug.Log(name + " is dead");
+            StartCoroutine(DestroyCoroutine());
+        }
     }
 
     public virtual IEnumerator AttackCroutine<T>(T status) where T : Status {

@@ -23,6 +23,7 @@ public class ObstacleSpawner : MonoBehaviour {
                 if (enemySpawner != null) {
                     navMeshSurface.BuildNavMesh();
                     enemySpawner.SetActive(true);
+                    break;
                 }
                 break;
             }

@@ -384,7 +384,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 332305667}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 407602046}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: LoadTitleScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &332305667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,6 +503,8 @@ GameObject:
   - component: {fileID: 407602042}
   - component: {fileID: 407602044}
   - component: {fileID: 407602043}
+  - component: {fileID: 407602045}
+  - component: {fileID: 407602046}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -562,6 +576,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407602041}
   m_CullTransparentMesh: 1
+--- !u!114 &407602045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407602041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c02494a69354ef4986f8ff1a44b49f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camSensSlider: {fileID: 1802477058}
+  enemySpawnRateSlider: {fileID: 815895009}
+  highScore: {fileID: 930285045}
+--- !u!114 &407602046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407602041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb662e884b0409942a527e57bda58007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &469333282
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,13 +1023,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 486603040}
   m_HandleRect: {fileID: 1826358840}
   m_Direction: 0
-  m_MinValue: 1
-  m_MaxValue: 5
+  m_MinValue: 0
+  m_MaxValue: 4
   m_WholeNumbers: 1
-  m_Value: 3
+  m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 407602045}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: EnemySpawnRateChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &819936683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1637,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Camera sensitivity: '
+  m_Text: Camera sensitivity                 Low                                
+    High
 --- !u!222 &1236048413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1909,13 +1963,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 978088170}
   m_HandleRect: {fileID: 1015982929}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 150
+  m_MinValue: 1
+  m_MaxValue: 5
   m_WholeNumbers: 1
-  m_Value: 50
+  m_Value: 3
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 407602045}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: CamSensChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1826358839
 GameObject:
   m_ObjectHideFlags: 0

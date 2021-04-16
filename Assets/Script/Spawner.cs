@@ -6,8 +6,15 @@ public class Spawner : MonoBehaviour {
     [SerializeField] Status playerStatus;
     [SerializeField] GameObject enemyPrefab;
     public int Counter { get; set; } = 0;
+    int spawnRate;
+    int[] spawnRateArray;
+
+    private void Awake() {
+        spawnRateArray = new int[] { 9, 7, 5, 3, 1 };
+    }
 
     void OnEnable() {
+        spawnRate = spawnRateArray[PlayerPrefs.GetInt("SpawnRate", 2)];
         StartCoroutine(SpawnLoop());
     }
 
@@ -19,7 +26,7 @@ public class Spawner : MonoBehaviour {
                 Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
                 Counter++;
             }
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(spawnRate);
             if (playerStatus.Hp <= 0) {
                 break;
             }
