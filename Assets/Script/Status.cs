@@ -77,12 +77,13 @@ public class Status : MonoBehaviour {
     public virtual void OnDie() {
         Die = true;
         if (CompareTag("Player")) {
-            Debug.Log(Die);
+            // Debug.Log(Die);
+            animator.SetTrigger("Die");
             gameController.GameOver();
         }
         else {
             animator.SetTrigger("Die");
-            Debug.Log(name + " is dead");
+            // Debug.Log(name + " is dead");
             StartCoroutine(DestroyCoroutine());
         }
     }
@@ -95,7 +96,7 @@ public class Status : MonoBehaviour {
             animator.SetTrigger("Attack");
             if (status.Hp > 0) {
                 status.Hp -= Random.Range(0.1f, 0.5f);
-                Debug.Log(status.name + "'s HP is " + status.Hp);
+                // Debug.Log(status.name + "'s HP is " + status.Hp);
                 if (status.Hp <= 0) {
                     BuildUpper = true;
                     break;

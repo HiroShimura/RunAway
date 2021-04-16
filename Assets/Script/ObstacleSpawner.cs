@@ -42,7 +42,7 @@ public class ObstacleSpawner : MonoBehaviour {
                 var spawnPos = Vector3.zero + rotate; // 配置するポジションを決定
                 if (NavMesh.SamplePosition(spawnPos, out NavMeshHit navMeshHit, distance, NavMesh.AllAreas)) {
                     Instantiate(obstacles[obstacleIndex], navMeshHit.position - new Vector3(0, 0.1f, 0), Quaternion.AngleAxis(Random.Range(-180f, 180), Vector3.up));
-                    Debug.Log("障害物を置ける");
+                    // Debug.Log("障害物を置ける");
                     angles.RemoveAt(angleIndex); // 一つの円で角度が被らないようにリストから除去
                     num++; // 障害物の総数を記録
                 }

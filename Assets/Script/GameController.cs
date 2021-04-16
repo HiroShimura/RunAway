@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
+    [SerializeField] GameObject virtualCamera;
     [SerializeField] GameObject enemySpawner;
     [SerializeField] GameObject pausePanel;
-    [SerializeField] GameObject gameOverPanel;
     [SerializeField] Score scoreManager;
 
     private void Awake() {
@@ -16,19 +18,18 @@ public class GameController : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            if (gameOverPanel.activeSelf) {
-                return;
-            }
             if (pausePanel.activeSelf) {
                 Time.timeScale = 1;
                 scoreManager.Stop = false;
                 Cursor.visible = false;
+                virtualCamera.SetActive(true);
                 pausePanel.SetActive(false);
             }
             else if (!pausePanel.activeSelf) {
                 Time.timeScale = 0;
                 scoreManager.Stop = true;
                 Cursor.visible = true;
+                virtualCamera.SetActive(false);
                 pausePanel.SetActive(true);
             }
         }
@@ -39,15 +40,20 @@ public class GameController : MonoBehaviour {
     }
 
     public void GameOver() {
-        Debug.Log("Game Over");
+        // Debug.Log("Game Over");
         scoreManager.Stop = true;
-        Time.timeScale = 0;
+        virtualCamera.SetActive(false);
         Cursor.visible = true;
-        gameOverPanel.SetActive(true);
         int score = scoreManager.TimeScore;
         int highScore = PlayerPrefs.GetInt("HighScore");
         if (score > highScore) {
             PlayerPrefs.SetInt("HighScore", score);
         }
+        StartCoroutine(GameOverCroutine());
+    }
+
+    IEnumerator GameOverCroutine() {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("GameOverScene");
     }
 }

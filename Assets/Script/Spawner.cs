@@ -5,6 +5,8 @@ using UnityEngine.AI;
 public class Spawner : MonoBehaviour {
     [SerializeField] Status playerStatus;
     [SerializeField] GameObject enemyPrefab;
+    [SerializeField] Score scoreManager;
+
     public int Counter { get; set; } = 0;
     int spawnRate;
     int[] spawnRateArray;
@@ -25,6 +27,7 @@ public class Spawner : MonoBehaviour {
             if (NavMesh.SamplePosition(spawnPos, out NavMeshHit navMeshHit, distanceVector.x, NavMesh.AllAreas)) {
                 Instantiate(enemyPrefab, navMeshHit.position, Quaternion.identity);
                 Counter++;
+                scoreManager.TimeScore += 500;
                 yield return new WaitForSeconds(spawnRate);
             }
             if (playerStatus.Hp <= 0) {
