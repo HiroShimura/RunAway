@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour {
     int[] spawnRateArray;
 
     private void Awake() {
-        spawnRateArray = new int[] { 9, 7, 5, 3, 1 };
+        spawnRateArray = new int[] { 11, 9, 7, 5, 3 };
     }
 
     void OnEnable() {
@@ -20,13 +20,13 @@ public class Spawner : MonoBehaviour {
 
     IEnumerator SpawnLoop() {
         while (true) {
-            var distanceVector = new Vector3(10, 0);
+            var distanceVector = new Vector3(Random.Range(10, 16), 0);
             var spawnPos = Quaternion.Euler(0, Random.Range(0f, 360f), 0) * distanceVector;
-            if (NavMesh.SamplePosition(spawnPos, out NavMeshHit navMeshHit, 10, NavMesh.AllAreas)) {
-                Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+            if (NavMesh.SamplePosition(spawnPos, out NavMeshHit navMeshHit, distanceVector.x, NavMesh.AllAreas)) {
+                Instantiate(enemyPrefab, navMeshHit.position, Quaternion.identity);
                 Counter++;
+                yield return new WaitForSeconds(spawnRate);
             }
-            yield return new WaitForSeconds(spawnRate);
             if (playerStatus.Hp <= 0) {
                 break;
             }

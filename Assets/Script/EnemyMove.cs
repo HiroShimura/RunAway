@@ -27,10 +27,11 @@ public class EnemyMove : MonoBehaviour {
             Vector3 destination = offset + transform.position;
             if (destination.x < -20 || destination.x > 20 || destination.z < -20 || destination.z > 20 || !NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path)) {
                 distance = 0;
-                return;
             }
-            agent.destination = destination;
-            distance = (offset - transform.position).magnitude;
+            else {
+                agent.destination = destination;
+                distance = (offset - transform.position).magnitude;
+            }
         }
         /*
         else if (!enemyStatus.usuallyMove) {

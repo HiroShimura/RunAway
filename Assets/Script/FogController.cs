@@ -9,14 +9,14 @@ public class FogController : MonoBehaviour {
     }
 
     void Update() {
-        if (player.transform.position.x <= -25 || player.transform.position.x >= 25 || player.transform.position.z <= -25 || player.transform.position.z >= 25) {
+        if (player.transform.position.x <= -15 || player.transform.position.x >= 15 || player.transform.position.z <= -15 || player.transform.position.z >= 15) {
             if (fogController.Density >= 4.5f) {
                 return;
             }
             fogController.Size = 0.2f;
             fogController.Density += Time.deltaTime;
         }
-        else if (player.transform.position.x <= -20 || player.transform.position.x >= 20 || player.transform.position.z <= -20 || player.transform.position.z >= 20) {
+        else if (player.transform.position.x <= -12 || player.transform.position.x >= 12 || player.transform.position.z <= -12 || player.transform.position.z >= 12) {
             if (fogController.Density >= 3.8f) {
                 fogController.Density -= Time.deltaTime;
             }
@@ -27,7 +27,7 @@ public class FogController : MonoBehaviour {
                 return;
             }
         }
-        else if (player.transform.position.x <= -16 || player.transform.position.x >= 16 || player.transform.position.z <= -16 || player.transform.position.z >= 16) {
+        else if (player.transform.position.x <= -10 || player.transform.position.x >= 10 || player.transform.position.z <= -10 || player.transform.position.z >= 10) {
             if (fogController.Density >= 3f) {
                 fogController.Density -= Time.deltaTime;
             }

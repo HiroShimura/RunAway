@@ -19,9 +19,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        if (status.Hp <= 0) {
-            status.OnDie();
-        }
         // LShiftでダッシュ
         if (Input.GetKey(KeyCode.LeftShift)) {
             // スタミナ管理

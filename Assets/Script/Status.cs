@@ -77,6 +77,7 @@ public class Status : MonoBehaviour {
     public virtual void OnDie() {
         Die = true;
         if (CompareTag("Player")) {
+            Debug.Log(Die);
             gameController.GameOver();
         }
         else {
