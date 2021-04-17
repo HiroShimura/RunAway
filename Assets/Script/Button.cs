@@ -6,7 +6,7 @@ public class Button : MonoBehaviour {
     public void LoadGameScene() => SceneManager.LoadScene("GameScene");
     public void LoadOptionScene() => SceneManager.LoadScene("OptionScene");
     public void Quit() {
-        UnityEditor.EditorApplication.isPlaying = false;
+        // UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }
