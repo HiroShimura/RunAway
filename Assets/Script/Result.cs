@@ -23,9 +23,12 @@ public class Result : MonoBehaviour {
     IEnumerator ResultCroutine() {
         CoroutineStarted = true;
         yield return new WaitForSeconds(1);
-        // if (PlayerPrefs.GetInt("HighScoreSwitch") == 1) {
-        animator.SetBool("HighScore", true);
-        // }
+        if (PlayerPrefs.GetInt("HighScoreSwitch") == 1) {
+            animator.SetBool("HighScore", true);
+        }
+        else {
+            animator.SetTrigger("Result");
+        }
         yield return new WaitForSeconds(3);
         panel.SetActive(true);
     }
