@@ -78,7 +78,6 @@ public class Status : MonoBehaviour {
         Die = true;
         if (CompareTag("Player")) {
             // Debug.Log(Die);
-            animator.SetTrigger("Die");
             gameController.GameOver();
         }
         else {

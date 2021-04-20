@@ -8,6 +8,7 @@ public class Result : MonoBehaviour {
     public bool CoroutineStarted { get; set; } = false;
 
     void Start() {
+        Time.timeScale = 1;
         animator = player.GetComponent<Animator>();
     }
 
