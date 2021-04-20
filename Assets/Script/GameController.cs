@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,9 +7,11 @@ public class GameController : MonoBehaviour {
     [SerializeField] GameObject virtualCamera;
     [SerializeField] GameObject enemySpawner;
     [SerializeField] GameObject pausePanel;
+    [SerializeField] GameObject gameOverPanel;
     [SerializeField] Score scoreManager;
 
     private void Awake() {
+        scoreManager.HighScoreSwitch = false;
         Cursor.visible = false;
         Time.timeScale = 1;
         for (int i = 0; i < 8; i++) {
@@ -47,13 +50,16 @@ public class GameController : MonoBehaviour {
         int score = scoreManager.TimeScore;
         int highScore = PlayerPrefs.GetInt("HighScore");
         if (score > highScore) {
+            scoreManager.HighScoreSwitch = true;
             PlayerPrefs.SetInt("HighScore", score);
         }
         StartCoroutine(GameOverCroutine());
     }
 
     IEnumerator GameOverCroutine() {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("GameOverScene");
+        yield return new WaitForSeconds(2.5f);
+        Time.timeScale = 0;
+        gameOverPanel.SetActive(true);
+        DOVirtual.DelayedCall(6, () => SceneManager.LoadScene("ResultScene"));
     }
 }

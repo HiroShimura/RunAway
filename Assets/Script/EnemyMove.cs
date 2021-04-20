@@ -29,7 +29,7 @@ public class EnemyMove : MonoBehaviour {
                 distance = 0;
             }
             else {
-                agent.destination = destination;
+                agent.SetDestination(destination); // destination = destination;
                 distance = (offset - transform.position).magnitude;
             }
         }
@@ -51,15 +51,20 @@ public class EnemyMove : MonoBehaviour {
             var direction = posDiff.normalized;
             var hitCount = Physics.RaycastNonAlloc(transform.position, direction, raycastHits, distance, layerMask);
             if (hitCount == 0) {
-                agent.destination = collider.transform.position;
+                agent.SetDestination(collider.transform.position); // destination = collider.transform.position;
             }
             else {
                 this.distance = 0;
+                agent.isStopped = true;
                 enemyStatus.usuallyMove = true;
             }
         }
         else {
+            return;
+            /*
+            agent.isStopped = true;
             enemyStatus.usuallyMove = true;
+            */
         }
     }
 

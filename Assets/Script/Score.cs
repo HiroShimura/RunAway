@@ -6,7 +6,7 @@ public class Score : MonoBehaviour {
     Text text;
     string score;
     public bool Stop { get; set; } = false;
-
+    public bool HighScoreSwitch { get; set; }
     public int TimeScore { get; set; } = 0;
 
     void Start() {
