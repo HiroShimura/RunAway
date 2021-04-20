@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
     [SerializeField] Score scoreManager;
 
     private void Awake() {
-        scoreManager.HighScoreSwitch = false;
+        PlayerPrefs.SetInt("HighScoreSwitch", 0);
         Cursor.visible = false;
         Time.timeScale = 1;
         for (int i = 0; i < 8; i++) {
@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour {
         int score = scoreManager.TimeScore;
         int highScore = PlayerPrefs.GetInt("HighScore");
         if (score > highScore) {
-            scoreManager.HighScoreSwitch = true;
+            PlayerPrefs.SetInt("HighScoreSwitch", 1);
             PlayerPrefs.SetInt("HighScore", score);
         }
         StartCoroutine(GameOverCroutine());

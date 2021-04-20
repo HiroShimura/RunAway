@@ -64,9 +64,11 @@ namespace UnityChan {
         }
 
         void ChangeFace(string str) {
-            // Emptyフラグがtrueの場合は表情を変えないように変更
-            if (status.GetStaminaIsEmpty()) {
-                return;
+            if (status != null) {
+                // Emptyフラグがtrueの場合は表情を変えないように変更
+                if (status.GetStaminaIsEmpty()) {
+                    return;
+                }
             }
             // Debug.Log(status.GetStaminaIsEmpty());
             isKeepFace = true;
