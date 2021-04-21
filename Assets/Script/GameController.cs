@@ -48,6 +48,7 @@ public class GameController : MonoBehaviour {
         virtualCamera.SetActive(false);
         Cursor.visible = true;
         int score = scoreManager.TimeScore;
+        PlayerPrefs.SetInt("Score", score);
         int highScore = PlayerPrefs.GetInt("HighScore");
         if (score > highScore) {
             PlayerPrefs.SetInt("HighScoreSwitch", 1);
