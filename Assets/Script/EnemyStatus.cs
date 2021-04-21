@@ -31,6 +31,7 @@ public class EnemyStatus : Status {
         Scale = 1 + Size * 0.2f;
     }
 
+    /*
     public void BuildUp() {
         Size++;
         Hp += Size;
@@ -44,6 +45,7 @@ public class EnemyStatus : Status {
         agent.radius += 0.5f;
         BuildUpper = false;
     }
+    */
 
     public override void OnAttackFinished() {
         base.OnAttackFinished();

@@ -16,33 +16,29 @@ public class EnemyMove : MonoBehaviour {
     }
 
     void Update() {
-        if (enemyStatus.usuallyMove) {
-            agent.isStopped = false;
-            var path = new NavMeshPath();
-            // なぜかdistance <= 1じゃないと上手くいかない
-            if (distance <= 1) {
-                offset.x = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
-                offset.z = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
-            }
-            Vector3 destination = offset + transform.position;
-            if (destination.x < -20 || destination.x > 20 || destination.z < -20 || destination.z > 20 || !NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path)) {
-                distance = 0;
-            }
-            else {
-                agent.SetDestination(destination); // destination = destination;
-                distance = (offset - transform.position).magnitude;
-            }
+        if (!enemyStatus.usuallyMove) return;
+
+        agent.isStopped = false;
+        var path = new NavMeshPath();
+        // なぜかdistance <= 1じゃないと上手くいかない
+        if (distance <= 1) {
+            offset.x = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
+            offset.z = Random.Range(-5f * enemyStatus.Scale, 5f * enemyStatus.Scale);
         }
-        /*
-        else if (!enemyStatus.usuallyMove) {
-            if (enemyStatus.Hp <= 0) {
-                agent.isStopped = true;
-            }
+        Vector3 destination = offset + transform.position;
+        if (destination.x < -30 || destination.x > 30 || destination.z < -30 || destination.z > 30 || !NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path)) {
+            distance = 0;
         }
-        */
+        else {
+            agent.SetDestination(destination); // destination = destination;
+            distance = (offset - transform.position).magnitude;
+        }
     }
 
     public void OnDetectObject(Collider collider) {
+        if (!enemyStatus.AttackPossible) {
+            return;
+        }
         agent.isStopped = false;
         if (collider.CompareTag("Player")) {
             enemyStatus.usuallyMove = false;
@@ -77,9 +73,11 @@ public class EnemyMove : MonoBehaviour {
         agent.isStopped = true;
         transform.LookAt(value.transform.position);
         enemyStatus.InAttack(value.name);
+        /*
         if (enemyStatus.BuildUpper) {
             enemyStatus.BuildUp();
             enemyStatus.usuallyMove = true;
         }
+        */
     }
 }

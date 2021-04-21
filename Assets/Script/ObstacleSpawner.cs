@@ -11,10 +11,12 @@ public class ObstacleSpawner : MonoBehaviour {
     NavMeshSurface navMeshSurface;
     [SerializeField] GameObject enemySpawner;
 
+    int i = 0;
+
     void Start() {
         navMeshSurface = GetComponent<NavMeshSurface>();
-        obstacleNum = Random.Range(15, 21); // 配置する障害物の数を決定(下のfor文の構造上、最大値+1～2個配置される可能性あり)
-        int distance = Random.Range(4, 7); // 障害物を出現させる円の半径を決定
+        obstacleNum = Random.Range(25, 31); // 配置する障害物の数を決定(下のfor文の構造上、最大値+1～2個配置される可能性あり)
+        int distance = 2; // 障害物を出現させる円の半径を決定
         offset = new Vector3(distance, 0); // 決定した半径をVector3に格納
 
         while (true) {
@@ -29,13 +31,13 @@ public class ObstacleSpawner : MonoBehaviour {
             }
             // 二周目以降は更新したdistanceを足して半径を広げていく
             if (num != 0) {
-                distance = Random.Range(4, 7);
+                distance = Random.Range(3, 6);
                 offset += new Vector3(distance, 0);
             }
-            angles = new List<int> { 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330 }; // 障害物を配置する円の角度リストの初期化
+            angles = new List<int> { 0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340 }; // 障害物を配置する円の角度リストの初期化
 
-            int obstacleNumInCircle = Random.Range(1, 4); // 一つの円に配置する障害物の数(1～3個)
-            for (int i = 0; i < obstacleNumInCircle; i++) {
+            int obstacleNumInCircle = Random.Range(1, 4) + i; // 一つの円に配置する障害物の数(1～3個)
+            for (i = 0; i < obstacleNumInCircle; i++) {
                 int obstacleIndex = Random.Range(0, obstacles.Length); // 障害物を格納した配列のインデックスをランダムで選択
                 int angleIndex = Random.Range(0, angles.Count); // 配置する角度のリストのインデックスをランダムで選択
                 var rotate = Quaternion.Euler(0, angles[angleIndex], 0) * offset; // 選択された角度と半径を掛け合わせる

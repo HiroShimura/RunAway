@@ -58,9 +58,9 @@ public class GameController : MonoBehaviour {
     }
 
     IEnumerator GameOverCroutine() {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(0.2f);
         Time.timeScale = 0;
         gameOverPanel.SetActive(true);
-        DOVirtual.DelayedCall(3, () => SceneManager.LoadScene("ResultScene"));
+        DOVirtual.DelayedCall(4, () => SceneManager.LoadScene("ResultScene"));
     }
 }

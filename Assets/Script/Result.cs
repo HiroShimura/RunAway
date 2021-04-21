@@ -30,9 +30,9 @@ public class Result : MonoBehaviour {
         yield return new WaitForSeconds(1);
         score.SetActive(true);
         if (PlayerPrefs.GetInt("HighScoreSwitch") == 1) {
-            animator.SetBool("HighScore", true);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             highScore.SetActive(true);
+            animator.SetBool("HighScore", true);
         }
         else {
             animator.SetTrigger("Result");
