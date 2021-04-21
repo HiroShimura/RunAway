@@ -48,7 +48,7 @@ public class FogController : MonoBehaviour {
         while (true) {
             yield return new WaitForSeconds(10);
             foggy += 0.2f;
-            if (foggy > 1.6f)
+            if (foggy > 1.0f)
                 break;
         }
     }

@@ -36,31 +36,30 @@ public class EnemyMove : MonoBehaviour {
     }
 
     public void OnDetectObject(Collider collider) {
-        if (!enemyStatus.AttackPossible) {
-            return;
-        }
-        agent.isStopped = false;
-        if (collider.CompareTag("Player")) {
-            enemyStatus.usuallyMove = false;
-            var posDiff = collider.transform.position - transform.position;
-            var distance = posDiff.magnitude;
-            var direction = posDiff.normalized;
-            var hitCount = Physics.RaycastNonAlloc(transform.position, direction, raycastHits, distance, layerMask);
-            if (hitCount == 0) {
-                agent.SetDestination(collider.transform.position); // destination = collider.transform.position;
+        if (enemyStatus.AttackPossible) {
+            agent.isStopped = false;
+            if (collider.CompareTag("Player")) {
+                enemyStatus.usuallyMove = false;
+                var posDiff = collider.transform.position - transform.position;
+                var distance = posDiff.magnitude;
+                var direction = posDiff.normalized;
+                var hitCount = Physics.RaycastNonAlloc(transform.position, direction, raycastHits, distance, layerMask);
+                if (hitCount == 0) {
+                    agent.SetDestination(collider.transform.position); // destination = collider.transform.position;
+                }
+                else {
+                    this.distance = 0;
+                    agent.isStopped = true;
+                    enemyStatus.usuallyMove = true;
+                }
             }
             else {
-                this.distance = 0;
+                return;
+                /*
                 agent.isStopped = true;
                 enemyStatus.usuallyMove = true;
+                */
             }
-        }
-        else {
-            return;
-            /*
-            agent.isStopped = true;
-            enemyStatus.usuallyMove = true;
-            */
         }
     }
 
