@@ -10,7 +10,7 @@ public class EnemyMove : MonoBehaviour {
     Vector3 offset;
     float distance = 0;
 
-    void Start() {
+    void Awake() {
         enemyStatus = GetComponent<EnemyStatus>();
         agent = GetComponent<NavMeshAgent>();
     }
